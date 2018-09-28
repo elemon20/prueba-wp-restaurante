@@ -1,0 +1,376 @@
+@font-face {
+  font-family: "Barlow-ExtraLight";
+  src: url("../fonts/Barlow-ExtraLight.ttf");
+  }
+
+@font-face {
+  font-family: "Barlow-Bold";
+  src: url("../fonts/Barlow-Bold.ttf");
+  }
+
+@font-face {
+  font-family: "Barlow-Medium";
+  src: url("../fonts/Barlow-Medium.ttf");
+  }
+
+@font-face {
+  font-family: "Barlow-Black";
+  src: url("../fonts/Barlow-Black.ttf");
+  }
+
+@font-face {
+  font-family: "Barlow-Light";
+  src: url("../fonts/Barlow-Light.ttf");
+  }
+
+/* Global Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 2rem;
+	font: inherit;
+	background:#000;
+    color: #fff;
+}
+
+h1, h2 {
+	font-family: 'Barlow-Black', sans-serif!important;
+	margin-bottom: 0.5rem!important;
+}
+
+h4 {
+	font-family: 'Barlow-Light', sans-serif!important;
+}
+
+small, p {
+	font-family: 'Barlow-ExtraLight', sans-serif!important;
+}
+
+
+/* Font hierarchy */
+
+h1 {
+ font-size: 3em!important;
+}
+
+h2 {
+ font-size: 2.25em!important;
+}
+
+h4 {
+  font-size: 1.50em!important;
+}
+
+
+@media only screen and (max-width : 768px) {
+
+  h1 {
+   font-size: 2em!important;
+  }
+
+  h2 {
+   font-size: 1.5em!important;
+  }
+
+  h4 {
+    font-size: 1em!important;
+  }
+
+
+
+}
+
+@media (max-width: 480px) {
+	.col-6 small {
+		display: none;
+	}
+
+
+}
+
+
+
+/* Header */
+
+.section-intro {
+	position: relative;
+	background-image: url('../img/sitio/il_fonti_di_modena.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+	min-height: 100vh;
+	align-items: center;
+	display: block;
+}
+
+.section-intro:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.section-pixel {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:transparent url(../img/pattern.png) repeat top left;
+}
+
+.content-wrap img{
+	width: 100%;
+}
+
+.navbar-toggler {
+	margin-top: 10px; 
+}
+
+.navbar-toggler-icon {
+	color: #cc1924;
+
+}
+
+.ac_content{
+	position:absolute;
+	height:90px;
+	width:100%;
+	top:80%;
+	left:0px;
+	margin-top:-65px;
+	background-color: #000000b3!important;
+}
+
+@media (max-width: 768px) {
+	.ac_content {
+		background-image: url('../img/marca/logo.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+    	background-blend-mode: soft-light;
+    	margin-top: 0px;
+    	position: fixed;
+    	top: 0px;
+	}
+	.content-wrap img{
+		display: none;
+	}
+}
+
+.ac_content h1{
+	background:transparent url(../img/bg_menu.png) repeat top left;
+	display:block;
+	float:left;
+	width:90px;
+	height:50px;
+	padding:20px 0px 70px 0px;
+	font-weight:bold;
+	line-height:20px;
+	margin-right:2px;
+	margin-bottom: 0px;
+}
+.ac_content h1 span{
+	display:block;
+	font-weight:normal;
+	
+}
+
+.ac_menu{
+	float:left;
+	position:relative;
+	height:90px;
+	width:0px; 
+}
+
+.ac_menu > ul{
+	float:left;
+}
+
+.ac_menu > ul > li {
+	float:left;
+	position:relative;
+	height:90px;
+	
+}
+
+.ac_menu > ul > li a {
+	background:transparent url(../img/bg_menu.png) repeat top left;
+	display:block;
+	height:90px;
+	padding:0px 10px;
+	text-align:center;
+	line-height:90px;
+	outline:none;
+	font-size:18px;
+	font-weight:bold;
+	text-shadow:0px 0px 3px #fff;
+	color: #fff;
+}
+
+.ac_menu > ul > li a:hover {
+	color: #cc1924;
+	font-weight: bold;
+	text-decoration-line: underline;
+	text-shadow: none;
+}
+
+
+.title {
+	padding: 10px 0 10px 0;
+	margin-bottom: 100px;
+}
+
+/* Main */
+.il-fonti_menu {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.il-fonti_menu__list:hover {
+	color: #cc1924;
+	font-weight: bold;
+	text-shadow: 0px 0px 3px #000;
+}
+
+.il-fonti_menu__list_img {
+	/*background-image: url('../img/platos/fondos/polenta_frita.jpg');*/
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	/*height: 40vh;*/
+	margin-bottom: 5px;
+	margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #fff;
+    /*float: left;*/
+}
+
+.section-intro-footer {
+	position: relative;
+	opacity: 0.9;
+	background-image: url('../img/sitio/cena.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+	min-height: 50vh;
+	align-items: center;
+	display: block;
+	
+}
+
+.reservation_il-fonti {
+	text-align: center;
+	text-decoration: none;
+	padding-top: 100px;
+	position: absolute;
+	width: 90%;
+	
+}
+
+.reservation_il-fonti h1{
+	color: #cc1924;
+	font-size: 4em;
+	
+}
+
+@media (max-width: 768px) {
+	.reservation_il-fonti h1{
+	font-size: 2.5em;
+	
+	}
+	.il-fonti_menu__list_img {
+		display: none;
+	}
+}
+
+.button_il-fonti {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+	margin-top: 20px;
+}
+
+.button_il-fonti:hover {
+	color: #cc1924;
+	font-weight: bold;
+}
+
+
+/* footer*/
+
+.footer_il-fonti {
+	overflow: hidden;
+	margin: 50px 0 50px 0px;
+}
+
+.footer_il-fonti ul {
+	margin-top: 50px;
+}
+
+.footer__il-fonti_image img{
+	width: 90%;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+
+.footer__il-fonti_icon {
+	margin-top: 50px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+.footer__il-fonti_icon i {
+	padding-right: 20px;
+}
+
+.footer__il-fonti_icon i:hover {
+	color: #cc1924;
+	font-weight: bold;
+	text-shadow:0px 0px 3px #fff;
+}
+
+footer, small {
+	text-align: center;
+}
+
+#toTop.show {
+  right: 8px;
+  opacity: 1;
+}
+
+#toTop {
+    display: block;
+    position: fixed;
+    right: -10px;
+    bottom: 58px;
+    cursor: pointer;
+    width: 50px;
+    background: rgba(255,255,255,.8);
+    color: #cc1924;
+    opacity: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    line-height: 50px;
+    vertical-align: middle;
+    border-radius: 50px;
+    z-index: 999;
+    transition: .25s;
+    border: 0.5px solid rgba(0,0,0,.22);
+    background-clip: padding-box;
+}
+#toTop:hover {
+	color: #000;
