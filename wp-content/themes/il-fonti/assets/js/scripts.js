@@ -18,25 +18,22 @@ $(document).ready(function () {
 
 // adicionando clases de boostrap al menú
   $(document).ready(function(){
-    $('.navbar-nav').children('li').addClass('nav-item');
-    $('.nav-item').children('a').addClass('nav-link dropdown-item');
+    $('.navbar-nav').children('li').addClass('nav-item active');
+    $('.nav-item').children('a').addClass('nav-link');
   });
 
-/* slide imagens*/
+/* pushbar*/
 
-/*$( ".il-fonti_menu__list" ).hover(function() {
-      $( this )
-        .toggleClass( "il-fonti_menu__list_img" );
-});*/
+var pushbar = new Pushbar({
+  blur: true,
+  overlay: true
+});
 
-  /*.filter( ":odd" )
-    .hide()
-  .end()
-  .filter( ":even" )*/
-    
-        /*.next()
-          .stop( true, true )
-          .slideToggle()*/
+//open a pushbar
+pushbar.open('pushbar-menu'); 
+
+//close all pushbars
+pushbar.close();
 
 
 
